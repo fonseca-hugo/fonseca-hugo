@@ -321,7 +321,7 @@ HFFC = (function () {
                                                 myXhr.upload.addEventListener('progress', function (progress) {
                                                         var total = progress.total || file.size,
                                                             totalSize = progress.total || progress.loaded,
-                                                            percentage = Math.floor((total / total) * 100) + '%';
+                                                            percentage = Math.floor((total / totalSize) * 100) + '%';
                                                         bar.width(percentage);
                                                         bar.attr('aria-valuenow', percentage);
                                                     }, false
