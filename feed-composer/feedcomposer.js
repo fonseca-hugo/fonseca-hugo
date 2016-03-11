@@ -319,9 +319,9 @@ HFFC = (function () {
                                             var myXhr = $.ajaxSettings.xhr();
                                             if (myXhr.upload) {
                                                 myXhr.upload.addEventListener('progress', function (progress) {
-                                                        var total = progress.totalSize || file.size,
-                                                            totalSize = progress.totalSize || progress.loaded,
-                                                            percentage = Math.floor((total / totalSize) * 100) + '%';
+                                                        var total = progress.total || file.size,
+                                                            totalSize = progress.total || progress.loaded,
+                                                            percentage = Math.floor((total / total) * 100) + '%';
                                                         bar.width(percentage);
                                                         bar.attr('aria-valuenow', percentage);
                                                     }, false
