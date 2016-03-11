@@ -306,7 +306,7 @@ HFFC = (function () {
                                 data.append('media_file', file);
 
                                 $.ajax({
-                                        url: 'upload.php',
+                                        url: 'http://playground.hugofonseca.co.uk/upload.php',
                                         data: data,
                                         type: 'POST',
                                         processData: false,
