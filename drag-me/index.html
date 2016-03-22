@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag Me</title>
+    <meta name="author" content="Hugo Fonseca (http://hugofonseca.co.uk - http://github.com/fonseca-hugo)">
+    <style>
+        h1 {
+            text-align: center;
+            color: coral;
+        }
+        article {
+            width: 300px;
+            display: inline-block;
+        }
+        article div:first-child {
+            height: 40px;
+        }
+        section {
+            position: relative;
+        }
+        .container {
+            background-color: antiquewhite;
+            height: 300px;
+            width: 100%;
+        }
+        #handle {
+            background-color: coral;
+        }
+        .container-1 {
+            background-color: #0e90d2;
+        }
+        .container-2 {
+            background-color: #C29F72;
+        }
+        .container-3 {
+            background-color: #C2728E;
+        }
+        .container-4 {
+            background-color: #C2C272;
+        }
+    </style>
+</head>
+<body>
+<h1>DRAG ME DEMO</h1>
+<section>
+    <article>
+        <div class="container-1"></div>
+        <div class="container container-1"></div>
+    </article>
+    <article>
+        <div class="container-2"></div>
+        <div class="container container-2"></div>
+    </article>
+    <article>
+        <div class="container-3"></div>
+        <div class="container container-3"></div>
+    </article>
+    <article>
+        <div class="container-4"></div>
+        <div class="container container-4"></div>
+    </article>
+    <article id="draggable">
+        <div id="handle"></div>
+        <div class="container"></div>
+    </article>
+
+</section>
+<script src="dragme.js"></script>
+<script>
+    HFDragMe.setup("draggable", "handle");
+</script>
+</body>
+</html>
