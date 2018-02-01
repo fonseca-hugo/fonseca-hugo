@@ -30,8 +30,8 @@ FACELENS = (function () {
     "use strict"; /* global FACELENS, $, console */
 
     var faceAttributes = "age,gender,headPose,smile,facialHair,glasses",
-        apiURL = "https://api.projectoxford.ai/face/v1.0/detect?returnFaceLandmarks=true&returnFaceAttributes=" + faceAttributes,
-        apiKey = "5ea8690dc2bb4ab7a1e0a3295b781079";
+        apiURL = "https://westeurope.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceLandmarks=true&returnFaceAttributes=" + faceAttributes,
+        apiKey = "715d1a152f904c519d2271b6444ed6ff";
 
     return {
         currentLens: 'dog',
